@@ -25,6 +25,17 @@ body {
   overflow-x: hidden;
 }
 
+/* display fixed navbar */
+.navbar-fixed {
+  position: fixed;
+  width: 90%;
+
+  /* background-color: red; */
+  top: 20px;
+  left: 24px;
+  align-items: center;
+}
+
 .navbar .hamburger {
   /* all: unset; */
   color: white;
@@ -39,8 +50,12 @@ body {
 /* disable the navlinks in the mobile section */
 
 /* disable the navlinks in the mobile section */
-
 .hero-section .navlinks {
+  display: none;
+}
+
+/* show the navbar */
+.hero-section .show-nav {
   position: absolute;
   height: 100%;
   top: 0;
@@ -52,6 +67,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.hero-section .hide-nav {
   transform: translateX(100%);
 }
 
@@ -71,12 +89,8 @@ body {
 }
 
 .links .link a {
-  color: var(--White);
-  font-size: 1rem;
   display: flex;
   gap: 11px;
-  font-family: 'Barlow Condensed', sans-serif;
-  text-transform: uppercase;
 }
 
 a .number {
@@ -113,5 +127,83 @@ a .text {
   letter-spacing: 1.25px;
   line-height: 23px;
   text-align: center;
+  text-transform: uppercase;
+}
+
+/* destination styling starts here */
+
+.destination {
+  width: 100%;
+  height: auto;
+  background: url(../starter-code/assets/destination/background-destination-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 24px 0;
+}
+
+.destination .top-title {
+  justify-content: center;
+  gap: 18px;
+  margin: 32px auto;
+}
+
+.top-title .number-title {
+  font-weight: 700;
+  color: var(--Dark-gray);
+}
+
+.destination .img {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.img img {
+  width: 60%;
+  margin: 12px auto 33px;
+}
+
+.destination .destination-links {
+  max-width: 240px;
+  margin: 10px auto;
+}
+
+.destination .destination-desc {
+  text-align: center;
+  margin: 13px 24px 32px;
+}
+
+.destination-desc h2 {
+  margin: 12px auto;
+}
+
+.destination-desc p {
+  width: 94%;
+  margin: auto;
+}
+
+.destination .horizontal-line {
+  margin: 10px 24px 32px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--Dark-gray);
+}
+
+.destination .estimation {
+  max-width: 330px;
+  text-align: center;
+  margin: auto;
+}
+
+.estimation .distance,
+.estimation .time {
+  margin-bottom: 42px;
+  height: 100px;
+}
+
+.distance h5,
+.time h5 {
+  margin: 22px auto 10px;
   text-transform: uppercase;
 }
