@@ -1,49 +1,57 @@
-.align-center{
-    margin: 0 24px;
+.align-center {
+  margin: 0 24px;
 }
+
 .d-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 /*  typography style */
 h1,
 h2,
 h3,
 h4,
-h5{
-    font-family: Bellefair;
-    font-weight: 400;
-    line-height: 100px;
-    color: var(--White);
+h5 {
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  line-height: 100px;
+  color: var(--White);
 }
-h1{
-    font-size: 5rem;
+
+h1 {
+  font-size: 5rem;
 }
-h2{
-    font-size: 3.5rem;
-    line-height: 64px;
+
+h2 {
+  font-size: 3.5rem;
+  line-height: 64px;
 }
-h3{
-    font-size: 1.5rem;
-    line-height: 28px;
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 28px;
 }
-h4{
-    font-size: 1rem;
-    line-height: 18px;
+
+h4 {
+  font-size: 1rem;
+  line-height: 18px;
 }
-h5{
-    font-family: Barlow Condensed;
-    font-size: 1rem;
-    line-height: 19px;
-    letter-spacing: 2.700000047683716px;
+
+h5 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1rem;
+  line-height: 19px;
+  letter-spacing: 2.700000047683716px;
 }
-p{
-    font-family: Barlow;
-    font-size: 0.94rem;
-    font-weight: 400;
-    line-height: 25px;
-    letter-spacing: 0px;
-    text-align: center;
-    color: var(--Grayish-light);
+
+p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.94rem;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--Grayish-light);
 }
