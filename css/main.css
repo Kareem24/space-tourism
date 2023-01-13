@@ -1,0 +1,111 @@
+:root {
+    /* primary color */
+    --Black: #0b0d17;
+    --White: #ffffff;
+    --Grayish-light: #d0d6f9;
+    --Dark-gray:#616476;
+}
+body{
+        font-family: 'Barlow', sans-serif;
+        
+            font-family: 'Barlow Condensed', sans-serif;
+        
+            font-family: 'Bellefair', serif;
+        
+            font-family: 'Poppins', sans-serif;
+}
+.hero-section{
+    height: 100vh;
+    background: url('../starter-code/assets/home/background-home-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 24px;
+    position: relative;
+    overflow-x:hidden ;
+}
+.navbar .hamburger{
+    /* all: unset; */
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+/* .hero-section .navbar{
+    margin-top: 24px;
+} */
+/* disable the navlinks in the mobile section */
+/* disable the navlinks in the mobile section */
+
+.hero-section .navlinks{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    display: flex;flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+}
+
+.navlinks .close-btn{
+    align-self: flex-end;
+    margin:33px 27px 0 auto;
+    font-size: 2.5rem;
+}
+.navlinks .links{
+    display: flex;
+    flex-direction: column;
+    margin: 118px auto auto 32px;
+    gap: 32px;
+    height: 80%;
+    width: 100%;
+
+}
+
+.links .link a{
+    color:var(--White);
+    font-size: 1rem;
+    display: flex;
+    gap: 11px;
+    font-family: Barlow Condensed;
+  text-transform: uppercase;
+}
+a .number{
+    font-weight: 700;
+}
+a .text{
+  font-weight: 400;
+}
+
+.hero-section .hero-text{
+    text-align: center;
+    margin-top: 48px;
+}
+
+.hero-text h1{
+    margin: 25px auto;
+}
+.hero-text p{
+    margin: auto auto 91px;
+}
+.hero-text .explore-btn{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background:var(--White);
+    color:var(--Black);
+    border: none;
+    font-family: Bellefair;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 1.25px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
