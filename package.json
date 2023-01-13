@@ -17,6 +17,6 @@
     "format:check": "npx prettier  --check **/*.{html,js,json,md,json,yaml,yml}",
     "lint": "npx stylelint \"**/*.css\" --fix",
     "lint:check": "npx stylelint \"**/*.css\"",
-     "hint": "npx hint --telemetry=off ."
+    "hint": "npx hint --telemetry=off ."
   }
 }
