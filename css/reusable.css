@@ -25,8 +25,9 @@ h1 {
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   line-height: 64px;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -41,7 +42,7 @@ h4 {
 
 h5 {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 19px;
   letter-spacing: 2.700000047683716px;
 }
@@ -54,4 +55,26 @@ p {
   letter-spacing: 0;
   text-align: center;
   color: var(--Grayish-light);
+}
+
+.sub-heading-one {
+  font-family: 'Bellefair', serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.sub-heading-two {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2.362499952316284px;
+}
+
+.nav-text {
+  color: var(--White);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 2.700000047683716px;
+  text-transform: uppercase;
 }
