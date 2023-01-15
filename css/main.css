@@ -128,24 +128,69 @@ a .text {
   line-height: 23px;
   text-align: center;
   text-transform: uppercase;
+  transition: linear 0.6s;
 }
 
-/* destination styling starts here */
+.explore-btn:hover {
+  animation: boom 1s linear infinite;
+}
+
+@keyframes boom {
+  0% {
+    outline: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  7.7% {
+    outline: 5px solid rgba(255, 255, 255, 0.3);
+  }
+
+  15.4% {
+    outline: 10px solid rgba(255, 255, 255, 0.2);
+  }
+
+  23.1% {
+    outline: 15px solid rgba(255, 255, 255, 0.2);
+  }
+
+  30.8% {
+    outline: 20px solid rgba(255, 255, 255, 0.1);
+  }
+
+  38.5% {
+    outline: 25px solid rgba(255, 255, 255, 0.1);
+  }
+
+  46.2% {
+    outline: 30px solid rgba(255, 255, 255, 0.1);
+  }
+
+  53.9% {
+    outline: 25px solid rgba(255, 255, 255, 0.1);
+  }
+
+  61.6% {
+    outline: 20px solid rgba(255, 255, 255, 0.1);
+  }
+
+  69.3% {
+    outline: 15px solid rgba(255, 255, 255, 0.2);
+  }
+
+  77% {
+    outline: 10px solid rgba(255, 255, 255, 0.2);
+  }
+
+  84.7% {
+    outline: 5px solid rgba(255, 255, 255, 0.3);
+  }
+
+  100% {
+    outline: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
 
 .destination {
-  width: 100%;
-  height: auto;
   background: url(../starter-code/assets/destination/background-destination-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 24px 0;
-}
-
-.destination .top-title {
-  justify-content: center;
-  gap: 18px;
-  margin: 32px auto;
 }
 
 .top-title .number-title {
@@ -183,13 +228,6 @@ a .text {
   margin: auto;
 }
 
-.destination .horizontal-line {
-  margin: 10px 24px 32px;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid var(--Dark-gray);
-}
-
 .destination .estimation {
   max-width: 330px;
   text-align: center;
@@ -206,4 +244,61 @@ a .text {
 .time h5 {
   margin: 22px auto 10px;
   text-transform: uppercase;
+}
+
+/* crew */
+.crew {
+  background: url(../starter-code/assets/crew/background-crew-mobile.jpg);
+}
+
+.crew-img img {
+  margin-bottom: 0;
+}
+
+.crew-img .crew-line {
+  margin-top: 0;
+}
+
+.crew .crew-desc {
+  width: 100%;
+  padding: 0 24px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.crew-desc .dots {
+  gap: 16px;
+  margin: 0  auto 32px;
+}
+
+.dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--White);
+  opacity: 0.17;
+  cursor: pointer;
+}
+
+.dots .dot-active {
+  background: var(--White);
+  opacity: 0.9;
+}
+
+.desc-text h4 {
+  font-family: 'Bellefair', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--White);
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.desc-text h3 {
+  font-family: 'Bellefair', serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 8px auto 16px;
 }

@@ -52,8 +52,6 @@ p {
   font-size: 0.94rem;
   font-weight: 400;
   line-height: 25px;
-  letter-spacing: 0;
-  text-align: center;
   color: var(--Grayish-light);
 }
 
@@ -77,4 +75,38 @@ p {
   font-weight: 400;
   letter-spacing: 2.700000047683716px;
   text-transform: uppercase;
+}
+
+/* the top title style */
+.top-title {
+  justify-content: center;
+  gap: 18px;
+  margin: 32px auto;
+}
+
+.top-title .number-title {
+  font-weight: 700;
+  color: var(--Dark-gray);
+}
+
+.img img {
+  width: 60%;
+  margin: 12px auto 33px;
+}
+
+/* the horizontal line */
+.horizontal-line {
+  margin: 10px 24px 32px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--Dark-gray);
+}
+
+.section-background {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 24px 0;
 }
