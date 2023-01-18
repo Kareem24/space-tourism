@@ -280,9 +280,14 @@ a .text {
   cursor: pointer;
 }
 
+.dot:hover {
+  opacity: 0.37;
+}
+
 .dots .dot-active {
   background: var(--White);
   opacity: 0.9;
+  color: var(--Black);
 }
 
 .desc-text h4 {
@@ -301,4 +306,44 @@ a .text {
   font-weight: 400;
   text-transform: uppercase;
   margin: 8px auto 16px;
+}
+
+.desc-text {
+  text-align: center;
+}
+
+.tech-img img {
+  width: 100%;
+}
+
+.technology .number-btns {
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 10px auto 28px;
+}
+
+.number-btns .number-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+}
+
+.number-btn:hover {
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.number-btn.active-num {
+  background: var(--White);
+  opacity: 0.9;
+  color: var(--Black);
+}
+
+.technology {
+  background: url(../starter-code/assets/technology/background-technology-mobile.jpg);
+  padding: 40px 0;
 }
