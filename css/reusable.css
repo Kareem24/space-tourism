@@ -110,3 +110,7 @@ p {
   background-size: cover;
   padding: 24px 0;
 }
+
+.dest-link {
+  cursor: pointer;
+}

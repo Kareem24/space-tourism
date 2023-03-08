@@ -1,0 +1,142 @@
+@media (min-width: 768px) {
+  h1 {
+    font-size: 9.375rem;
+  }
+
+  p {
+    font-size: 1.07rem;
+  }
+
+  .hero-section .navlinks {
+    display: initial;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    height: 96px;
+    padding: 0 10px;
+  }
+
+  .navlinks .links {
+    justify-content: space-between;
+    flex-direction: row;
+    margin: auto;
+    margin-right: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .navlinks .link a {
+    position: relative;
+  }
+
+  .navlinks .link a::after,
+  .link .active::after,
+  .destination-links .dest-link::after {
+    background: var(--White);
+    opacity: 0.5;
+    bottom: -47px;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    width: 0;
+    transition: linear 0.6s;
+  }
+
+  .destination-links .dest-link::after {
+    bottom: -18px;
+  }
+
+  .link a.active::after,
+  .destination-links li.active::after {
+    opacity: 1;
+    width: 100%;
+  }
+
+  .links .link a:hover::after,
+  .destination-links .dest-link:hover::after {
+    width: 100%;
+  }
+
+  .hamburger,
+  .close-btn,
+  .nav-text .number {
+    display: none;
+  }
+
+  .nav-text {
+    font-size: 0.9rem;
+  }
+
+  .top-title {
+    justify-content: left;
+    margin-left: 38.5px;
+  }
+
+  .number-btns .number-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .explore-btn:hover {
+    animation: boom 1s linear infinite;
+  }
+
+  @keyframes boom {
+    0% {
+      outline: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    7.7% {
+      outline: 5px solid rgba(255, 255, 255, 0.3);
+    }
+
+    15.4% {
+      outline: 10px solid rgba(255, 255, 255, 0.2);
+    }
+
+    23.1% {
+      outline: 15px solid rgba(255, 255, 255, 0.2);
+    }
+
+    30.8% {
+      outline: 20px solid rgba(255, 255, 255, 0.1);
+    }
+
+    38.5% {
+      outline: 25px solid rgba(255, 255, 255, 0.1);
+    }
+
+    46.2% {
+      outline: 30px solid rgba(255, 255, 255, 0.1);
+    }
+
+    53.9% {
+      outline: 25px solid rgba(255, 255, 255, 0.1);
+    }
+
+    61.6% {
+      outline: 20px solid rgba(255, 255, 255, 0.1);
+    }
+
+    69.3% {
+      outline: 15px solid rgba(255, 255, 255, 0.2);
+    }
+
+    77% {
+      outline: 10px solid rgba(255, 255, 255, 0.2);
+    }
+
+    84.7% {
+      outline: 5px solid rgba(255, 255, 255, 0.3);
+    }
+
+    100% {
+      outline: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  }
+}
