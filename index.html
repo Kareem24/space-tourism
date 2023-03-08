@@ -66,11 +66,13 @@
             and not hover kind of on the edge of it. Well sit back, and relax because we'll give you
             a truly out of this world experience!
           </p>
-          <button class="explore-btn" type="button">explore</button>
+          <button class="explore-btn" type="button" onclick="location.href='#destination'">
+            explore
+          </button>
         </div>
       </header>
     </main>
-    <section class="destination section-background">
+    <section class="destination section-background" id="destination">
       <header class="top-title align-center d-flex">
         <h5 class="number-title">01</h5>
         <h5 class="text-title">Pick your destination</h5>
@@ -83,10 +85,10 @@
         />
       </div>
       <ul class="destination-links d-flex ">
-        <li class="dest-link nav-text active">moon</li>
-        <li class="dest-link nav-text">mars</li>
-        <li class="dest-link nav-text">europa</li>
-        <li class="dest-link nav-text">titan</li>
+        <li class="dest-link nav-text active" data-name="Moon">moon</li>
+        <li class="dest-link nav-text" data-name="Mars">mars</li>
+        <li class="dest-link nav-text" data-name="Europa">europa</li>
+        <li class="dest-link nav-text" data-name="Titan">titan</li>
       </ul>
       <article class="destination-desc">
         <h2>moon</h2>
@@ -120,7 +122,7 @@
             alt="douglas hurley picture"
             id="crew-img"
             width="400"
-            height="600"
+            height="300"
           />
           <hr class="horizontal-line crew-line" />
         </div>
