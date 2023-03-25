@@ -23,7 +23,7 @@ const getData = async () => {
 
       const uniqueCrew = crew.find(crews => crews.name === crewBtn.dataset.name);
       const { name, images, bio, role } = uniqueCrew;
-      crewImg.src = `starter-code/${images.png}`;
+      crewImg.src = `starter-code/${images.webp}`;
       crewPoint.innerHTML = `<h4>${role}</h4>
           <h3>${name}</h3>
           <p>
@@ -38,7 +38,7 @@ const getData = async () => {
       const { name, images, description, travel, distance } = uniqueDest;
       const destDesc = document.querySelector('.destination-desc');
       const timeDiv = document.querySelector('.estimation');
-      destinationImg.src = `starter-code/${images.png}`;
+      destinationImg.src = `starter-code/${images.webp}`;
       destDesc.innerHTML = `<h2>${name}</h2>
         <p>
           ${description}
@@ -54,4 +54,9 @@ const getData = async () => {
     });
   });
 };
-getData();
+window.addEventListener('DOMContentLoaded', getData);
+window.addEventListener('load', () => {
+  const loader = document.querySelector('.loading-screen');
+  console.log(loader);
+  loader.classList.add('hide');
+});
