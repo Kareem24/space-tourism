@@ -26,37 +26,40 @@
       <div class="circle"></div>
     </div>
     <main class="hero-section">
-      <nav class="navbar align-center d-flex">
+      <nav class="navbar d-flex">
         <img src="starter-code/assets/shared/logo.svg" alt="logo" />
-        <div class="navlinks d-flex">
-          <button type="button" class="close-btn" aria-label="menu button">
-            <i class="bx bx-x"></i>
-          </button>
+        <div class="links-wrapper d-flex">
+          <div class="navlinks d-flex">
+            <button type="button" class="close-btn" aria-label="menu button">
+              <i class="bx bx-x"></i>s
+            </button>
 
-          <ul class="links d-flex">
-            <li class="link">
-              <a href="#" class="nav-text active"
-                ><span class="number">00</span><span class="text-link">home</span></a
-              >
-            </li>
-            <li class="link">
-              <a href="#" class="nav-text"
-                ><span class="number">01</span><span class="text-link">destination</span></a
-              >
-            </li>
-            <li class="link">
-              <a href="#" class="nav-text"
-                ><span class="number">03</span><span class="text-link">crew</span></a
-              >
-            </li>
-            <li class="link">
-              <a href="#" class="nav-text"
-                ><span class="number">04</span><span class="text-link">technology</span></a
-              >
-            </li>
-          </ul>
+            <ul class="links d-flex">
+              <li class="link">
+                <a href="#" class="nav-text active"
+                  ><span class="number">00</span><span class="text-link">home</span></a
+                >
+              </li>
+              <li class="link">
+                <a href="#" class="nav-text"
+                  ><span class="number">01</span><span class="text-link">destination</span></a
+                >
+              </li>
+              <li class="link">
+                <a href="#" class="nav-text"
+                  ><span class="number">03</span><span class="text-link">crew</span></a
+                >
+              </li>
+              <li class="link">
+                <a href="#" class="nav-text"
+                  ><span class="number">04</span><span class="text-link">technology</span></a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
         <button type="button" class="hamburger">
+          y
           <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
       </nav>
@@ -69,6 +72,8 @@
             and not hover kind of on the edge of it. Well sit back, and relax because we'll give you
             a truly out of this world experience!
           </p>
+        </div>
+        <div class="btn-div">
           <button class="explore-btn" type="button" onclick="location.href='#destination'">
             explore
           </button>
@@ -80,36 +85,40 @@
         <h5 class="number-title">01</h5>
         <h5 class="text-title">Pick your destination</h5>
       </header>
-      <div class="img">
-        <img
-          src="./starter-code/assets/destination/image-moon.webp"
-          alt="moon picture"
-          id="desstination-img"
-        />
-      </div>
-      <ul class="destination-links d-flex ">
-        <li class="dest-link nav-text active" data-name="Moon">moon</li>
-        <li class="dest-link nav-text" data-name="Mars">mars</li>
-        <li class="dest-link nav-text" data-name="Europa">europa</li>
-        <li class="dest-link nav-text" data-name="Titan">titan</li>
-      </ul>
-      <article class="destination-desc">
-        <h2>moon</h2>
-        <p>
-          See our planet as you've never seen it before. A perfect relaxing trip away to help regain
-          perspective and come back refreshed. While you're there, take in some history by visiting
-          the Luna 2 and Apollo 11 landing sites.
-        </p>
-      </article>
-      <hr class="horizontal-line" />
-      <div class="estimation">
-        <div class="distance">
-          <p class="nav-text">AVG. DISTANCE</p>
-          <h5 class="sub-heading-one kilometer">384,400 km</h5>
+      <div class="destination-wrapper ">
+        <div class="img">
+          <img
+            src="./starter-code/assets/destination/image-moon.webp"
+            alt="moon picture"
+            id="desstination-img"
+          />
         </div>
-        <div class="time">
-          <p class="nav-text">Est. travel time</p>
-          <h5 class="sub-heading-one days">3 days</h5>
+        <div class="text-description">
+          <ul class="destination-links d-flex ">
+            <li class="dest-link nav-text active" data-name="Moon">moon</li>
+            <li class="dest-link nav-text" data-name="Mars">mars</li>
+            <li class="dest-link nav-text" data-name="Europa">europa</li>
+            <li class="dest-link nav-text" data-name="Titan">titan</li>
+          </ul>
+          <article class="destination-desc">
+            <h2>moon</h2>
+            <p>
+              See our planet as you've never seen it before. A perfect relaxing trip away to help
+              regain perspective and come back refreshed. While you're there, take in some history
+              by visiting the Luna 2 and Apollo 11 landing sites.
+            </p>
+          </article>
+          <hr class="horizontal-line" />
+          <div class="estimation ">
+            <div class="distance">
+              <p class="nav-text">AVG. DISTANCE</p>
+              <h5 class="sub-heading-one kilometer">384,400 km</h5>
+            </div>
+            <div class="time">
+              <p class="nav-text">Est. travel time</p>
+              <h5 class="sub-heading-one days">3 days</h5>
+            </div>
+          </div>
         </div>
       </div>
     </section>

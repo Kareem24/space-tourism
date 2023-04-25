@@ -48,7 +48,7 @@ body {
 }
 
 .hero-section {
-  height: auto;
+  min-height: 100vh;
   background: url('../starter-code/assets/home/background-home-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -60,15 +60,17 @@ body {
 }
 
 /* display fixed navbar */
-.navbar-fixed {
-  position: fixed;
-  width: 90%;
 
-  /* background-color: red; */
-  top: 20px;
+/* .navbar-fixed {
+  position: fixed;
+  width: 90%; */
+
+/* background-color: red; */
+
+/* top: 20px;
   left: 24px;
   align-items: center;
-}
+} */
 
 .navbar .hamburger {
   /* all: unset; */
@@ -77,9 +79,18 @@ body {
   cursor: pointer;
 }
 
-/* .hero-section .navbar{
-    margin-top: 24px;
-} */
+.hero-section .navbar {
+  position: fixed;
+  width: 100%;
+
+  /* background-color: red; */
+  top: 0;
+  left: 0;
+  margin: auto;
+
+  /* align-items: center; */
+}
+
 
 /* disable the navlinks in the mobile section */
 
@@ -93,14 +104,13 @@ body {
   position: absolute;
   height: 100%;
   top: 0;
-  right: 0;
+  right: -20px;
   width: 60%;
-  background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(40.7742px);
-  display: flex;
-  flex-direction: column;
+
+  /* flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .hero-section .hide-nav {
@@ -120,6 +130,7 @@ body {
   gap: 32px;
   height: 80%;
   width: 100%;
+  align-items: flex-start;
 }
 
 .links .link a {
@@ -137,9 +148,10 @@ a .text {
 
 .hero-section .hero-text {
   text-align: center;
-  margin-top: 48px;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  padding-top: 120px;
 }
 
 .hero-text h1 {
@@ -220,7 +232,7 @@ a .text {
 }
 
 .destination .estimation {
-  max-width: 330px;
+  max-width: 500px;
   text-align: center;
   margin: auto;
 }

@@ -1,21 +1,32 @@
 @media (min-width: 768px) {
   h1 {
-    font-size: 9.375rem;
+    font-size: 7.375rem;
   }
 
   p {
     font-size: 1.07rem;
   }
 
+  .hero-section .hero-text {
+    padding-top: 150px;
+  }
+
   .hero-section .navlinks {
     display: initial;
     align-items: center;
     justify-content: center;
-    width: 60%;
+
+    /* background: rgba(255, 255, 255, 0.04); */
+    height: 96px;
+    padding: 10px;
+  }
+
+  .navbar .links-wrapper {
+    flex-basis: 60%;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.7742px);
-    height: 96px;
-    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
   }
 
   .navlinks .links {
@@ -25,6 +36,7 @@
     margin-right: 0;
     padding-right: 10px;
     padding-left: 10px;
+    align-items: center;
   }
 
   .navlinks .link a {

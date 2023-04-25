@@ -1,0 +1,65 @@
+@media (min-width: 1024px) {
+  .hero-section {
+    background: url('../starter-code/assets/home/background-home-desktop.jpg');
+  }
+
+  .hero-section .hero-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 9rem auto 0;
+  }
+
+  .hero-text p {
+    max-width: 500px;
+    margin: 40px auto;
+  }
+
+  .hero-text h1 {
+    margin: 40px auto;
+  }
+
+  .nav-text .number {
+    display: initial;
+  }
+
+  .destination {
+    height: 100vh;
+  }
+
+  .destination .destination-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .destination .destination-desc {
+    text-align: left;
+  }
+
+  .destination .destination-links {
+    margin-left: 0;
+  }
+
+  .destination .destination-desc,
+  .destination-desc h2,
+  .destination-desc p {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .horizontal-line {
+    margin-left: 0;
+  }
+
+  .destination .estimation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .distance h5,
+  .distance p {
+    margin-left: 0;
+  }
+}
