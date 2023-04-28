@@ -62,4 +62,29 @@
   .distance p {
     margin-left: 0;
   }
+
+  .crew .entry-point {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'text image';
+  }
+
+  .entry-point .crew-desc {
+    grid-area: text;
+  }
+
+  .crew .desc-text {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .entry-point .crew-img {
+    grid-area: image;
+  }
+
+  .crew-desc .dots {
+    gap: 16px;
+    margin: 20px auto 32px;
+    align-items: flex-start;
+  }
 }

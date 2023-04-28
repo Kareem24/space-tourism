@@ -43,6 +43,11 @@
     position: relative;
   }
 
+  .destination,
+  .crew {
+    padding-top: 80px;
+  }
+
   .navlinks .link a::after,
   .link .active::after,
   .destination-links .dest-link::after {
@@ -72,6 +77,18 @@
   .links .link a:hover::after,
   .destination-links .dest-link:hover::after {
     width: 100%;
+  }
+
+  .crew .entry-point {
+    flex-direction: column-reverse;
+  }
+
+  .crew-desc .dots {
+    order: 1;
+  }
+
+  .crew-img .crew-line {
+    display: none;
   }
 
   .hamburger,

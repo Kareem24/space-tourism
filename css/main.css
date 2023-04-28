@@ -71,12 +71,16 @@ body {
   left: 24px;
   align-items: center;
 } */
+.navbar .logo {
+  margin: 20px;
+}
 
 .navbar .hamburger {
   /* all: unset; */
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
+  margin-right: 25px;
 }
 
 .hero-section .navbar {
@@ -90,7 +94,6 @@ body {
 
   /* align-items: center; */
 }
-
 
 /* disable the navlinks in the mobile section */
 
@@ -184,6 +187,7 @@ a .text {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
+  padding-top: 50px;
 }
 
 .top-title .number-title {
@@ -257,6 +261,11 @@ a .text {
   background-size: 100% 100%;
 }
 
+.crew .entry-point {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .crew-img img {
   margin-bottom: 0;
 }
@@ -273,8 +282,9 @@ a .text {
 }
 
 .crew-desc .dots {
+  max-width: 500px;
   gap: 16px;
-  margin: 0  auto 32px;
+  margin: 20px auto 32px;
 }
 
 .dots .dot {
@@ -315,7 +325,8 @@ a .text {
 }
 
 .desc-text {
-  text-align: center;
+  /* text-align: center; */
+  max-width: 500px;
 }
 
 .tech-img img {
