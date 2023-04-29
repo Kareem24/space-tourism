@@ -57,6 +57,6 @@ const getData = async () => {
 window.addEventListener('DOMContentLoaded', getData);
 window.addEventListener('load', () => {
   const loader = document.querySelector('.loading-screen');
-  console.log(loader);
+
   loader.classList.add('hide');
 });

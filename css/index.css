@@ -4,3 +4,4 @@ This imports the `reset.css` file */
 @import './reusable.css';
 @import './main.css';
 @import './tablet.css';
+@import './desktop.css';
