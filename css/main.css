@@ -333,6 +333,14 @@ a .text {
   width: 100%;
 }
 
+.technology .technology-content-wrapper {
+  flex-direction: column;
+  text-align: center;
+}
+
+/* .technology .tech-img {
+  order: 0;
+} */
 .technology .number-btns {
   justify-content: center;
   align-items: center;

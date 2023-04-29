@@ -27,7 +27,13 @@
     </div>
     <main class="hero-section">
       <nav class="navbar d-flex">
-        <img src="starter-code/assets/shared/logo.svg" alt="logo" class="logo" />
+        <img
+          src="starter-code/assets/shared/logo.svg"
+          alt="logo"
+          class="logo"
+          width="50"
+          height="50"
+        />
         <div class="links-wrapper d-flex">
           <div class="navlinks d-flex">
             <button type="button" class="close-btn" aria-label="menu button">
@@ -41,17 +47,17 @@
                 >
               </li>
               <li class="link">
-                <a href="#" class="nav-text"
+                <a href="#destination" class="nav-text"
                   ><span class="number">01</span><span class="text-link">destination</span></a
                 >
               </li>
               <li class="link">
-                <a href="#" class="nav-text"
+                <a href="#crew" class="nav-text"
                   ><span class="number">03</span><span class="text-link">crew</span></a
                 >
               </li>
               <li class="link">
-                <a href="#" class="nav-text"
+                <a href="#technology" class="nav-text"
                   ><span class="number">04</span><span class="text-link">technology</span></a
                 >
               </li>
@@ -91,6 +97,8 @@
             src="./starter-code/assets/destination/image-moon.webp"
             alt="moon picture"
             id="desstination-img"
+            width="445"
+            height="600"
           />
         </div>
         <div class="text-description">
@@ -122,7 +130,7 @@
         </div>
       </div>
     </section>
-    <section class="crew section-background">
+    <section class="crew section-background" id="crew">
       <header class="top-title align-center d-flex">
         <h5 class="number-title">02</h5>
         <h5 class="text-title">Meet your crew</h5>
@@ -138,51 +146,57 @@
           />
           <hr class="horizontal-line crew-line" />
         </div>
-        <div class="crew-desc d-flex">
-          <div class="dots d-flex">
-            <div class="dot dot-active" data-name="Douglas Hurley"></div>
-            <div class="dot" data-name="Mark Shuttleworth"></div>
-            <div class="dot" data-name="Victor Glover"></div>
-            <div class="dot" data-name="Anousheh Ansari"></div>
-          </div>
-          <div class="desc-text">
-            <h4>Commander</h4>
-            <h3>Douglas Hurley</h3>
-            <p>
-              Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former
-              NASA astronaut. He launched into space for the third time as commander of Crew Dragon
-              Demo-2.
-            </p>
+        <div class="crew-content-wrapper">
+          <div class="crew-desc d-flex">
+            <div class="dots d-flex">
+              <div class="dot dot-active" data-name="Douglas Hurley"></div>
+              <div class="dot" data-name="Mark Shuttleworth"></div>
+              <div class="dot" data-name="Victor Glover"></div>
+              <div class="dot" data-name="Anousheh Ansari"></div>
+            </div>
+            <div class="desc-text">
+              <h4>Commander</h4>
+              <h3>Douglas Hurley</h3>
+              <p>
+                Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former
+                NASA astronaut. He launched into space for the third time as commander of Crew
+                Dragon Demo-2.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="crew technology section-background">
+    <section class="crew technology section-background" id="technology">
       <header class="top-title align-center d-flex">
         <h5 class="number-title">03</h5>
         <h5 class="text-title">SPACE LAUNCH 101</h5>
       </header>
-      <div class="img tech-img">
-        <img
-          src="./starter-code/assets/technology/image-launch-vehicle-landscape.jpg"
-          alt="douglas hurley picture"
-        />
-      </div>
-      <div class="number-btns d-flex">
-        <button type="button" class="number-btn d-flex active-num">1</button>
-        <button type="button" class="number-btn d-flex">2</button>
-        <button type="button" class="number-btn d-flex">3</button>
-      </div>
+      <div class="technology-content-wrapper d-flex">
+        <div class="img tech-img ">
+          <img
+            src="./starter-code/assets/technology/image-launch-vehicle-landscape.jpg"
+            alt="douglas hurley picture"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="number-btns d-flex">
+          <button type="button" class="number-btn d-flex active-num">1</button>
+          <button type="button" class="number-btn d-flex">2</button>
+          <button type="button" class="number-btn d-flex">3</button>
+        </div>
 
-      <div class="desc-text align-center">
-        <p class="nav-text">THE TERMINOLOGY…</p>
-        <h3>LAUNCH VEHICLE</h3>
-        <p>
-          A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload
-          from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket
-          is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring
-          sight on the launch pad!
-        </p>
+        <div class="desc-text align-center ">
+          <p class="nav-text">THE TERMINOLOGY…</p>
+          <h3>LAUNCH VEHICLE</h3>
+          <p>
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload
+            from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier
+            rocket is the most powerful in operation. Standing 150 metres tall, it's quite an
+            awe-inspiring sight on the launch pad!
+          </p>
+        </div>
       </div>
     </section>
     <script src="javascript/app.js" type="module"></script>

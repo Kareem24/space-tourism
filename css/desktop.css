@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media (min-width: 1224px) {
   .hero-section {
     background: url('../starter-code/assets/home/background-home-desktop.jpg');
   }
@@ -9,20 +9,30 @@
     margin: 9rem auto 0;
   }
 
-  .hero-text p {
+  .hero-text .text-container {
+    text-align: left;
     max-width: 500px;
-    margin: 40px auto;
+    margin-left: 165px;
+  }
+
+  .hero-text p {
+    margin: 40px auto 40px 0;
   }
 
   .hero-text h1 {
-    margin: 40px auto;
+    margin: 40px auto 40px 0;
   }
 
   .nav-text .number {
     display: initial;
   }
 
-  .destination {
+  .navbar .logo {
+    margin: 20px auto auto 40px;
+  }
+
+  .destination,
+  .crew {
     height: 100vh;
   }
 
@@ -71,6 +81,13 @@
 
   .entry-point .crew-desc {
     grid-area: text;
+    max-width: 500px;
+    text-align: left;
+    margin-left: 165px;
+  }
+
+  .desc-text h3 {
+    margin: 20px auto 20px 0;
   }
 
   .crew .desc-text {
@@ -84,7 +101,28 @@
 
   .crew-desc .dots {
     gap: 16px;
-    margin: 20px auto 32px;
-    align-items: flex-start;
+    margin: 30px auto 32px 0;
+    align-self: flex-start;
+    justify-self: flex-start;
+    max-width: 500px;
+  }
+
+  .technology .technology-content-wrapper {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .technology .tech-img {
+    order: 2;
+    flex-basis: 40%;
+  }
+
+  .technology .number-btns {
+    flex-direction: column;
+  }
+
+  .tech-img img {
+    max-width: 515px;
+    height: 527px;
   }
 }
