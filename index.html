@@ -41,23 +41,23 @@
             </button>
 
             <ul class="links d-flex">
-              <li class="link">
-                <a href="#" class="nav-text active"
+              <li class="link ">
+                <a href="#" class="nav-text active a-link"
                   ><span class="number">00</span><span class="text-link">home</span></a
                 >
               </li>
               <li class="link">
-                <a href="#destination" class="nav-text"
+                <a href="#destination" class="nav-text a-link"
                   ><span class="number">01</span><span class="text-link">destination</span></a
                 >
               </li>
               <li class="link">
-                <a href="#crew" class="nav-text"
+                <a href="#crew" class="nav-text a-link"
                   ><span class="number">03</span><span class="text-link">crew</span></a
                 >
               </li>
               <li class="link">
-                <a href="#technology" class="nav-text"
+                <a href="#technology" class="nav-text a-link"
                   ><span class="number">04</span><span class="text-link">technology</span></a
                 >
               </li>
@@ -65,7 +65,6 @@
           </div>
         </div>
         <button type="button" class="hamburger">
-          y
           <i class="fa fa-bars"></i>
         </button>
       </nav>
@@ -98,7 +97,7 @@
             alt="moon picture"
             id="desstination-img"
             width="445"
-            height="600"
+            height="400"
           />
         </div>
         <div class="text-description">
@@ -179,15 +178,19 @@
             alt="douglas hurley picture"
             width="300"
             height="300"
+            class="technology-img"
+            id="tech_img"
           />
         </div>
         <div class="number-btns d-flex">
-          <button type="button" class="number-btn d-flex active-num">1</button>
-          <button type="button" class="number-btn d-flex">2</button>
-          <button type="button" class="number-btn d-flex">3</button>
+          <button type="button" class="number-btn d-flex active-num" data-name="Launch vehicle">
+            1
+          </button>
+          <button type="button" class="number-btn d-flex" data-name="Spaceport">2</button>
+          <button type="button" class="number-btn d-flex" data-name="Space capsule">3</button>
         </div>
 
-        <div class="desc-text align-center ">
+        <div class="desc-text align-center tech-desc">
           <p class="nav-text">THE TERMINOLOGY…</p>
           <h3>LAUNCH VEHICLE</h3>
           <p>
