@@ -106,15 +106,22 @@
     justify-self: flex-start;
     max-width: 500px;
   }
+  .technology {
+    height: 100vh;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
 
   .technology .technology-content-wrapper {
     flex-direction: row;
     text-align: left;
+    height: auto;
   }
 
   .technology .tech-img {
     order: 2;
     flex-basis: 40%;
+    height: 100%;
   }
 
   .technology .number-btns {
@@ -123,6 +130,6 @@
 
   .tech-img img {
     max-width: 515px;
-    height: 407px;
+    height: 100%;
   }
 }
