@@ -17,10 +17,10 @@
     justify-content: center;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.7742px);
-
     height: 96px;
     padding: 10px;
   }
+
   .navbar {
     align-items: center;
     justify-content: space-between;
@@ -44,9 +44,11 @@
   .crew {
     padding-top: 80px;
   }
+
   .destination .destination-links {
     justify-content: left;
   }
+
   .navlinks .link a::after,
   .link .active::after,
   .destination-links .dest-link::after {

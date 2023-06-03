@@ -10,20 +10,19 @@ const techDescription = document.querySelector('.tech-desc');
 const techBtns = document.querySelectorAll('.number-btn ');
 const navLink = document.querySelectorAll('.a-link');
 const exploreBtn = document.querySelector('.explore-btn');
-const hamburger = document.querySelector('.hamburger')
-const closeBtn = document.querySelector('.close-btn')
-const navLinks = document.querySelector('.navlinks')
+const hamburger = document.querySelector('.hamburger');
+const closeBtn = document.querySelector('.close-btn');
+const navLinks = document.querySelector('.navlinks');
 const showNav = () => {
-  navLinks.classList.remove('hide-nav')
-}
+  navLinks.classList.remove('hide-nav');
+};
 const hideNavbar = () => {
-  navLinks.classList.add('hide-nav')
-}
+  navLinks.classList.add('hide-nav');
+};
 
-hamburger.addEventListener('click', showNav)
-closeBtn.addEventListener('click', hideNavbar)
-window.addEventListener('scroll', hideNavbar)
-
+hamburger.addEventListener('click', showNav);
+closeBtn.addEventListener('click', hideNavbar);
+window.addEventListener('scroll', hideNavbar);
 
 const changeActive = (e, activeState, button) => {
   const change = e.currentTarget;
@@ -85,9 +84,10 @@ const getTechnology = tech => {
       const techName = btn.dataset.name;
       const uniqueTech = getItem(tech, techName);
       const { name, images, description } = uniqueTech;
-      const width = window.innerWidth
-      width < 768 ? techImg.src = `./starter-code/${images.landscape}` :
-        techImg.src = `./starter-code/${images.portrait}`;
+      const width = window.innerWidth;
+      width < 768
+        ? (techImg.src = `./starter-code/${images.landscape}`)
+        : (techImg.src = `./starter-code/${images.portrait}`);
       techDescription.innerHTML = `
       <p class="nav-text">THE TERMINOLOGY…</p>
           <h3>${name}</h3>
@@ -106,8 +106,6 @@ const getData = async () => {
   getDestination(destinations);
   getCrew(crew);
   getTechnology(technology);
-
-
 };
 const explore = () => {
   const links = [...navLink];
@@ -115,27 +113,24 @@ const explore = () => {
     links[1].classList.add('active');
     links[0].classList.remove('active');
   }
-}
+};
 const changeImgFormat = () => {
-  const width = window.innerWidth
+  const width = window.innerWidth;
   // width < 700 ? techImg.src = 'now small' : techImg.src = 'image big'
-  const src = techImg.src.toString()
-  const newstr = src.replace('landscape', 'portrait')
+  const src = techImg.src.toString();
+  const newstr = src.replace('landscape', 'portrait');
   if (width > 1224) {
-    techImg.src = newstr
-
+    techImg.src = newstr;
   } else {
-    const portstr = src.replace('portrait', 'landscape')
-    techImg.src = portstr
+    const portstr = src.replace('portrait', 'landscape');
+    techImg.src = portstr;
   }
-
-
-}
+};
 
 exploreBtn.addEventListener('click', explore);
 window.addEventListener('DOMContentLoaded', getData);
-window.addEventListener('resize', changeImgFormat)
-window.addEventListener('load', changeImgFormat)
+window.addEventListener('resize', changeImgFormat);
+window.addEventListener('load', changeImgFormat);
 window.addEventListener('load', () => {
   const loader = document.querySelector('.loading-screen');
 
