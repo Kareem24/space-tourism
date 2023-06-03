@@ -15,24 +15,21 @@
     display: initial;
     align-items: center;
     justify-content: center;
-
-    /* background: rgba(255, 255, 255, 0.04); */
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
     height: 96px;
     padding: 10px;
   }
 
-  .navbar .links-wrapper {
-    flex-basis: 60%;
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(40.7742px);
-    justify-content: center;
+  .navbar {
     align-items: center;
+    justify-content: space-between;
   }
 
   .navlinks .links {
     justify-content: space-between;
     flex-direction: row;
-    margin: auto;
+    margin: 0 auto;
     margin-right: 0;
     padding-right: 10px;
     padding-left: 10px;
@@ -46,6 +43,10 @@
   .destination,
   .crew {
     padding-top: 80px;
+  }
+
+  .destination .destination-links {
+    justify-content: left;
   }
 
   .navlinks .link a::after,

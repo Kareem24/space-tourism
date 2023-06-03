@@ -8,9 +8,21 @@ const timeDiv = document.querySelector('.estimation');
 const techImg = document.getElementById('tech_img');
 const techDescription = document.querySelector('.tech-desc');
 const techBtns = document.querySelectorAll('.number-btn ');
-const navLinks = document.querySelectorAll('.a-link');
+const navLink = document.querySelectorAll('.a-link');
 const exploreBtn = document.querySelector('.explore-btn');
-const links = [...navLinks];
+const hamburger = document.querySelector('.hamburger');
+const closeBtn = document.querySelector('.close-btn');
+const navLinks = document.querySelector('.navlinks');
+const showNav = () => {
+  navLinks.classList.remove('hide-nav');
+};
+const hideNavbar = () => {
+  navLinks.classList.add('hide-nav');
+};
+
+hamburger.addEventListener('click', showNav);
+closeBtn.addEventListener('click', hideNavbar);
+window.addEventListener('scroll', hideNavbar);
 
 const changeActive = (e, activeState, button) => {
   const change = e.currentTarget;
@@ -19,7 +31,7 @@ const changeActive = (e, activeState, button) => {
     btn !== change ? btn.classList.remove(activeState) : change.classList.add(activeState);
   });
 };
-navLinks.forEach(btn => btn.addEventListener('click', e => changeActive(e, 'active', navLinks)));
+navLink.forEach(btn => btn.addEventListener('click', e => changeActive(e, 'active', navLink)));
 const getItem = (obj, name) => obj.find(item => item.name === name);
 
 const loadDestination = (e, destinationData, uniqueBtn) => {
@@ -57,7 +69,6 @@ const getCrew = crews => {
       changeActive(e, 'dot-active', crewBtns);
       const crewName = btn.dataset.name;
       const uniqueCrew = getItem(crews, crewName);
-      // const uniqueCrew = crew.find(crews => crews.name === crewBtn.dataset.name);
       const { name, images, bio, role } = uniqueCrew;
       crewImg.src = `starter-code/${images.webp}`;
       crewPoint.innerHTML = `<h4>${role}</h4>
@@ -73,7 +84,10 @@ const getTechnology = tech => {
       const techName = btn.dataset.name;
       const uniqueTech = getItem(tech, techName);
       const { name, images, description } = uniqueTech;
-      techImg.src = `./starter-code/${images.landscape}`;
+      const width = window.innerWidth;
+      width < 768
+        ? (techImg.src = `./starter-code/${images.landscape}`)
+        : (techImg.src = `./starter-code/${images.portrait}`);
       techDescription.innerHTML = `
       <p class="nav-text">THE TERMINOLOGY…</p>
           <h3>${name}</h3>
@@ -93,13 +107,30 @@ const getData = async () => {
   getCrew(crew);
   getTechnology(technology);
 };
-exploreBtn.addEventListener('click', () => {
+const explore = () => {
+  const links = [...navLink];
   if (!links[1].classList.contains('active')) {
     links[1].classList.add('active');
     links[0].classList.remove('active');
   }
-});
+};
+const changeImgFormat = () => {
+  const width = window.innerWidth;
+  // width < 700 ? techImg.src = 'now small' : techImg.src = 'image big'
+  const src = techImg.src.toString();
+  const newstr = src.replace('landscape', 'portrait');
+  if (width > 1224) {
+    techImg.src = newstr;
+  } else {
+    const portstr = src.replace('portrait', 'landscape');
+    techImg.src = portstr;
+  }
+};
+
+exploreBtn.addEventListener('click', explore);
 window.addEventListener('DOMContentLoaded', getData);
+window.addEventListener('resize', changeImgFormat);
+window.addEventListener('load', changeImgFormat);
 window.addEventListener('load', () => {
   const loader = document.querySelector('.loading-screen');
 
